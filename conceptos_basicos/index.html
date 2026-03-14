@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Natalia Marigliano Zelaya" /><link rel="canonical" href="https://natmarzel.github.io/practica4-MKDocs/conceptos_basicos/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Introducción - Linux</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../css/styles.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Introducci\u00f3n";
+        var mkdocs_page_input_path = "conceptos_basicos.md";
+        var mkdocs_page_url = "/practica4-MKDocs/conceptos_basicos/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Linux
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Inicio</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Conceptos básicos</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Introducción</a>
+    <ul class="current">
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../scripts/">Scripts</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sintaxis/">Sintaxis</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../comodines/">Comodines</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Linux</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Conceptos básicos</li>
+      <li class="breadcrumb-item active">Introducción</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="conceptos-basicos">Conceptos Básicos</h1>
+<div class="admonition danger">
+<p class="admonition-title">¡Cuidado!</p>
+<p>Si vas a realizar pruebas, recomendamos que lo hagas en una máquina virtual vacía en la que no arriesgues información importante.</p>
+</div>
+<p>Una de las formas con las que nos podemos comunicar con un sistema operativo es el <strong>CLI (Command-line interface)</strong>. La interfaz de línea de comandos es una pantalla donde el usuario se comunica con el ordenador escribiendo en la pantalla una serie de comandos que proporciona el SO. <strong>Esta interfaz tiene como desventaja que es difícil de aprender</strong>, ya que hay que recordar el nombre de los mandos y la sintaxis necesaria para que el ordenador los interprete correctamente.</p>
+<p>Antes de que existiera Windows, MS-DOS, era uno de los sistemas operativos que tenían los ordenadores. Este sistema ya no está disponible pero el podemos simular en Windows. <strong>El programa que interpreta los comandos de MS-DOS es el "Símbolo del sistema"</strong> y se ejecuta mediante la aplicación <strong>cmd.exe</strong>.</p>
+<p>La consola es una interfaz de usuario de tipo texto para interactuar con el sistema operativo. <strong>El usuario escribe una orden en el símbolo del sistema o prompt que se ejecuta al pulsar la tecla Intro</strong>. Un programa, llamado <strong>intérprete de comandos</strong> o <strong>shell</strong>, comprueba si la sintaxis es correcta y <strong>ejecuta</strong> el mando. Cuando finaliza vuelve a mostrar el prompt y podemos escribir otra orden.</p>
+<p>El <strong>prompt</strong> es un símbolo que muestra el sistema operativo y que indica que está preparado para recibir órdenes. Además, muestra información al usuario como el directorio actual o el nombre del usuario y el ordenador en el caso de Linux</p>
+<p><img alt="Símbolo de sistema" src="../img/imagen3.png" />
+<img alt="PowerShell" src="../img/imagen4.png" /></p>
+<p>En Windows el prompt es el símbolo “&gt;” y muestra el directorio actual: C:\Users\Sergio, es decir, el directorio personal del usuario Sergio.</p>
+<p><img alt="Imagen consola Linux" src="../img/imagen1.png" /></p>
+<p><strong>En Linux el prompt</strong> de cualquier usuario (excepto <strong>root</strong>) es <strong>$</strong> y la información que muestra es el usuario (<strong>sergio</strong>), el nombre del ordenador (<strong>sergio-virtualbox</strong>) y el directorio actual (~, <strong>virgulilla</strong> (ALT GR + 4), que es el directorio personal del usuario, es decir, <strong>/home/sergio</strong>). El símbolo <strong>@</strong> separa el usuario y el ordenador y el símbolo: separa el ordenador del directorio actual</p>
+<p><code>root@sergio-VitualBox:/home/sergio#</code></p>
+<p>El Linux <strong>el prompt de root es #</strong>. La información mostrada es el usuario (<strong>root</strong>), el ordenador (<strong>sergio-virtualbox</strong>) y el directorio actual (/home/sergio, es el mismo que antes pero en este caso ese directorio no es el directorio personal de root por lo que no pone ~).</p>
+<p><strong>El directorio actual es el directorio en el que nos encontramos en este instante y en el que se ejecutará la orden</strong>. Si, por ejemplo, el orden es de crear el directorio "<strong>prueba</strong>" (mkdir prueba) ese directorio se creará en el directorio actual. En los ejemplos anteriores se creará dentro de <strong>/home/sergio</strong> (en los ejemplos de Linux) y dentro de <strong>C:\Users\sergio</strong> (en el ejemplo de Windows).</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href=".." class="btn btn-neutral float-left" title="Inicio"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../scripts/" class="btn btn-neutral float-right" title="Scripts">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../scripts/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
