@@ -1,0 +1,8 @@
+site_name: Linux
+nav:
+  - Inicio: index.md
+  - Conceptos básicos:
+    - Introducción: conceptos_basicos.md
+    - Scripts: scripts.md
+    - Sintaxis: sintaxis.md
+    - Comodines: comodines.md

@@ -1,0 +1,41 @@
+.wy-side-nav-search{
+	background-color: #1C2541;
+}
+.wy-nav-content{
+	width: 100%;
+	.icon-home{
+		color: #ECD444;
+	}
+}
+
+.wy-side-scroll{
+	background-color: #0B132B;
+}
+
+span.caption-text{
+	color: #6BAB90;
+}
+
+.rst-current-version{
+	span{
+		background-color: #1C2541;
+	}
+}
+
+.icon-circle-arrow-right, .icon-circle-arrow-left{
+	color: #6BAB90;
+}
+
+.section{
+	code{
+		color: #55917F;
+		font-size: 16px;
+		padding: 0.3rem;
+		border-radius: 6px;
+	}
+}
+
+
+	.toctree-l2{
+		background-color: #6BAB90;
+	}
