@@ -1,6 +1,6 @@
 site_name: Linux
 site_author: "Natalia Marigliano Zelaya"
-# site_url:
+site_url: https://natmarzel.github.io/practica4-MKDocs/
 docs_dir: 'md'
 site_dir: 'docs'
 extra_css:
