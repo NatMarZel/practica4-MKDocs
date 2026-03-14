@@ -1,4 +1,10 @@
 site_name: Linux
+site_author: "Natalia Marigliano Zelaya"
+# site_url:
+docs_dir: 'md'
+site_dir: 'docs'
+extra_css:
+  - css/styles.css
 nav:
   - Inicio: index.md
   - Conceptos básicos:
@@ -6,3 +12,6 @@ nav:
     - Scripts: scripts.md
     - Sintaxis: sintaxis.md
     - Comodines: comodines.md
+theme: readthedocs
+markdown_extensions:
+  - admonition
